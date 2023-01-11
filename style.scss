@@ -1,0 +1,181 @@
+$font: "Plus Jakarta Sans", sans-serif;
+$v-light-gray-blue: hsl(210, 60%, 98%);
+$light-gray-blue-1: hsl(211, 68%, 94%);
+$light-gray-blue-2: hsl(205, 33%, 90%);
+$gray-blue: hsl(219, 14%, 63%);
+$dark-gray-blue: hsl(219, 12%, 42%);
+$v-dark-blue: hsl(224, 21%, 14%);
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $font;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: Min(100%, 700px);
+  padding: 1.5rem 1rem;
+  background-color: white;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+#notifications-num {
+  display: inline-block;
+  margin: 0rem 0.5rem;
+  padding: 0.1rem 0.7rem;
+  vertical-align: text-bottom;
+  background-color: $blue;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.read-btn {
+  background-color: transparent;
+  font-family: $font;
+  font-size: 0.9rem;
+  color: $dark-gray-blue;
+  border: none;
+
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.notification {
+  display: flex;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.unread {
+  background-color: $v-light-gray-blue;
+}
+
+.sign {
+  &::after {
+    content: "\25CF";
+    color: $red;
+    font-size: 1rem;
+  }
+}
+
+.notification + .notification {
+  margin-top: 0.5rem;
+}
+
+.notification__avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.text-wrapper {
+  flex: 1;
+  font-size: 0.9rem;
+  color: $dark-gray-blue;
+}
+
+.user {
+  font-weight: 800;
+  color: $v-dark-blue;
+
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.post {
+  font-weight: 800;
+
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.group {
+  font-weight: 800;
+  color: $blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.notification__time {
+  margin-top: 0.3rem;
+  color: $gray-blue;
+}
+
+.notification__message {
+  padding: 1rem;
+  margin-top: 0.6rem;
+  border: 1px solid $light-gray-blue-2;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $light-gray-blue-2;
+    cursor: pointer;
+  }
+}
+
+.notification__photo {
+  width: 40px;
+  height: 40px;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  color: $dark-gray-blue;
+  margin: 1rem;
+
+  a {
+    color: $blue;
+    font-weight: 800;
+    text-decoration: none;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  html {
+    font-size: 105%;
+  }
+
+  body {
+    background-color: $v-light-gray-blue;
+  }
+
+  .card {
+    margin: 1rem 0rem;
+    padding: 2rem;
+    box-shadow: $light-gray-blue-2 0px 0px 25px;
+    border-radius: 20px;
+  }
+}
