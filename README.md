@@ -24,12 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/desktop.png)
+![](./assets/images/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/lidiakrajewska/notifications-page-main](https://github.com/lidiakrajewska/notifications-page-main)
+- Live Site URL: [https://lidiakrajewska.github.io/notifications-page-main/](https://lidiakrajewska.github.io/notifications-page-main/)
 
 ## My process
 
